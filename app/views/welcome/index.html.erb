@@ -1,0 +1,9 @@
+<h1>Welcome#index</h1>
+
+<p> <%= link_to "Make Payment", braintree_new_path %> </p>
+
+<!-- <div id="flash"> -->
+<% flash.each do |key, value| -%>
+  <div class="<%= flash_class(key) %>"><%= value %></div>
+<% end %>
+<!-- </div> -->
